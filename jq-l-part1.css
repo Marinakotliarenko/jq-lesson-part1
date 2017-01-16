@@ -1,0 +1,16 @@
+.wrapper {
+    width: 1440px;
+    margin: 0 auto;
+    background: lightslategrey;
+}
+.button-active {
+    background-color: aqua;
+}
+.hide-t {
+    display: none;
+}
+
+
+.active {
+    display: block;
+}
