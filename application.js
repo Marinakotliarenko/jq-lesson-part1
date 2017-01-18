@@ -55,14 +55,31 @@ $(document).ready(function(){
         $(this).closest('li').find('.hide-t').show();
     });
     $('.data-about-me').on('click',function(){
-        console.log($(this).width() + ', '+ $(this).height()+ ', '+ $(this).offset().top + ', '+ $(this).offset().left +
-        ', ' + JSON.parse(this.attributes));
+        var data = {btnWidth : $(this).width(),
+            btnHeight: $(this).height(),
+            offsetY : $(this).offset().top,
+            offsetX : $(this).offset().left,
+            atributesValues : $.map(this.attributes, function(val, key) { return val; }),
+            parentEl : $(this).parent(),
+            prevEl : $(this).prev(),
+            nextEl : $(this).next(),
+            buttonText : $(this).text()};
+        console.log(data);
     });
-
-
-
 
     $('.tour').on('click', 'button',function(){
         $(this).closest('.tour').find('.more-info').toggleClass('active');
     });
+    $('.unuseful').on ('click', function(){
+       unuseful= $(this).detach();
+    });
+    $('.useful').on ('click', function(){
+        $(this).html(unuseful);
+    });
+
+    $('#choose li').eq(1).css("background-color","yellow");
+    $("#heading").click(function(){
+        $("#hi").slideToggle("slow");
+    });
+
 });

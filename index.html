@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta content='width:device-width, initial-scale=1, user-scalable:no, maximum-scale=1' name='viewport'>
-    <link href='jq-l-part1.css' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+    <link href='css/normalize.css' rel='stylesheet' type='text/css'>
+    <link href='css/part1.css' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="js-libraries/jquery-3.1.1.min.js"></script>
     <title>jq lesson part1</title>
 </head>
 <body>
 <div class="wrapper">
-    <h1>JQ lesson part-1. </h1>
+    <header>
+        <h1>JQ lesson part-1. </h1>
+    </header>
     <ul class="buttons">
         <li>
             <button class="add-class">
@@ -103,20 +106,34 @@
                 dataAboutMe
             </button>
         </li>
-    </ul>
-
-    <ul class="tours">
-        <li class="tour">
-            <h2>Lorem ipsum dolor.</h2>
-            <p> Lorem ipsum dolor sit amet.</p>
-            <button> Show more info</button>
-            <ul class="more-info hide-t">
-                <li> Lorem ipsum dolor sit.</li>
-                <img src="images/460.jpg" alt="Paris">
-            </ul>
+        <li>
+            <button>
+                lastButton
+            </button>
         </li>
     </ul>
-    
+    <div class="second-part">
+        <div id="heading">Second part</div>
+        <div id="hi">Hello world!</div>
+        <ul id="choose">
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+        </ul>
+        <ul class="tours">
+            <li class="tour">
+                <h2>Lorem ipsum dolor.</h2>
+                <p class="useful"> Lorem ipsum dolor sit amet.</p>
+                <p class="unuseful"> press here and then up</p>
+                <button> Show more info</button>
+                <ul class="more-info hide-t">
+                    <li> Lorem ipsum dolor sit.</li>
+                    <img src="images/images.png" alt="Paris">
+                </ul>
+            </li>
+        </ul>
+    </div>
+
 </div>
 <script type="text/javascript" src="application.js"></script>
 </body>

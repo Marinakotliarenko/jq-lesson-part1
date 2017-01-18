@@ -1,0 +1,16 @@
+fieldset {
+    width: 300px;
+    margin: 40px auto;
+}
+form{
+    margin-top: 50px;
+}
+button{
+    display: block;
+    width: 80px;
+    height: 30px;
+    margin-top: 20px;
+}
+.active {
+    background-color: aqua;
+}
